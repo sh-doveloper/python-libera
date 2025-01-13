@@ -1,1 +1,1 @@
-print("hello, world! push 된다!!")
+print("hello, world! - CI")
