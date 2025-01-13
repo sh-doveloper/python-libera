@@ -4,7 +4,8 @@ FROM python:3.11-slim AS builder
 # 작업 디렉토리 설정
 WORKDIR /app
 
-
-COPY app/main.py ./app
+# 애플리케이션 코드 복사
+#COPY app/main.py ./app
+COPY ./app ./app
 
 CMD ["python", "-m", "app.main"]
