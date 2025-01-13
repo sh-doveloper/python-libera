@@ -2,8 +2,13 @@ name: Build and Push Docker Image
 
 on:
   push:
-    tags:
-      - 'v*' # 태그가 푸시될 때만 동작
+    branches:
+      - main
+    paths:
+      - "app/**"
+      - "Dockerfile"
+      - "requirements.txt"
+      - ".env*"
 
 jobs:
   build:
